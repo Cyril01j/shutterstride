@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter stride</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="\Style\style.css">
+    <link rel="icon" type="image/x-icon" href="\images\logo.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Cyril's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hello,
+                My name is <span class="#236ce4">Cyril</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn" onclick="redirectToPage()">See My portfolio</button>
+                    <script> 
+                        function redirectToPage() {
+                            window.location.href = "portfolio.html"; // Replace with your target URL
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="images\background.png">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer.', '<i>&amp; Video Editor.</i>'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer>
+
+        <div class="rights">
+            www.shutterstride.com | All Rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
